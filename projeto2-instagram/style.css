@@ -1,0 +1,311 @@
+body {
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.barra-sup-mobile {
+    display: none;
+}
+
+.barra-inf {
+    display: none;
+}
+
+.barra-sup {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #DBDBDB;
+    font-size: 22px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.barra-sup > div{
+    background-color: #FFFFFF;
+    width: 935px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    box-sizing: content-box;
+}
+
+.logo img {
+    margin-top: 10px;
+    width: 103px;
+    height: 29px; 
+}
+
+.linha-vert {
+    background-color: #DBDBDB;
+    height: 100%;
+    width: 1px;
+    margin: 0 10px;
+    padding: 10px 0;
+}
+
+.conteudo {
+    width: 935px;
+    margin: 0 auto;
+    margin-top: 74px;
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisa input {
+    width:215px;
+    height: 28px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    text-align: center;
+    color: #DBDBDB;
+}
+
+.menu ion-icon {
+    margin: 0 5px;
+}
+
+.timeline {
+    width: 614px;
+    margin-top: 24px;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.post {
+    margin: 0 auto 50px auto;
+    height: 749px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+}
+
+.post-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil p {
+    font-size:14px;
+    font-weight: medium;
+}
+
+.post-topo img, p, ion-icon {
+    margin: 15px;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.like {
+    display: flex;
+    align-items: center; 
+    margin-top: -20px;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.like img {
+    width: 20px;
+    height: 20px;
+}
+
+.foto {
+    width: 100%;
+    height: 612px;
+}
+
+.fundo {
+    width: 66px;
+    height: 66px;
+}
+
+.icon {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.stories {
+    width: 614px;
+    height: 118px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 12px;
+    overflow: hidden;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+.storie {
+    position: relative;
+    margin: 0 auto;
+}
+
+.storie p {
+    margin-top: 8px;
+    margin-right: -10px;
+}
+
+.primeiro {
+    margin-left: 15px;
+}
+
+.ultimo {
+    margin-right: -35px;
+    
+}
+
+.seta {
+    position: absolute;
+    right: 10px;
+}
+
+
+.sidebar {
+    width: 297px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.side-topo {
+    display: flex;
+    align-items: center;
+}
+
+.side-topo div p {
+    font-size: 14px;
+    margin: 0 auto;
+    margin-left: 5px;
+}
+
+.sugestoes {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+.sugestao {
+    display: flex;
+    align-items: center;
+}
+
+.sugestao div p {
+    font-size: 14px;
+    margin: 0 auto;
+    margin-left: 5px;
+}
+
+.sugestoes-perfis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.sugestoes-perfis img {
+    width: 32px;
+    height: 32px;
+}
+
+.cinza {
+    color: #8E8E8E;
+}
+
+button {
+    color: #139EF2;
+    border: none;
+    background-color: #FAFAFA;
+    cursor: pointer;
+}
+
+.copy {
+    font-size: 12px;
+}
+
+
+
+@media (max-width: 935px){
+    .sidebar {
+        display: none;
+    }
+}
+@media (max-width: 614px){
+    .barra-sup {
+        display: none;
+    }
+
+    .barra-sup-mobile {
+        display: initial;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 54px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #DBDBDB;
+        font-size: 22px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .seta {
+        display: none;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .stories {
+        width: 100%;
+        background-color: #FAFAFA;
+        border: none;
+    }
+
+    .barra-inf {
+        display: initial;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 54px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #DBDBDB;
+        font-size: 22px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
